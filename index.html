@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex flex-col md:flex-row justify-center items-center min-h-screen"
+  >
+    <div class="text-center">
+      <h1 class="text-xl font-semibold pb-5">Weather APP</h1>
+      <input
+        type="text"
+        id="city-input"
+        class="border border-2 block border-black mb-5 p-2 rounded-md"
+      />
+
+      <button
+        class="bg-black text-white p-3 rounded-lg w-18"
+        onclick="search()"
+      >
+        Search
+      </button>
+      <button
+        class="bg-blue-500 text-white p-3 rounded-lg w-18"
+        onclick="myFunction()"
+      >
+        Click Me
+      </button>
+
+      <div class="para p-5 text-xl text-left">
+        <p>City : <span id="city">---</span></p>
+        <p>Country : <span id="country">---</span></p>
+        <p>Weather : <span id="weather">---</span></p>
+        <p>Teamperature : <span id="temp">---</span></p>
+      </div>
+    </div>
+    <script src="Working.js"></script>
+  </body>
+</html>
